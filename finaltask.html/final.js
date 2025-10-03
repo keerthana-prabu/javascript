@@ -12,7 +12,7 @@ function saveProfile(){
         let age = parseInt(document.getElementById("age").value);
 
         if (!name || !email || !age) {
-      throw alert("Please fill all fields.");
+        throw alert("Please fill all fields.");
     }
     user.name = name;
     user.email = email;
@@ -26,7 +26,9 @@ function saveProfile(){
     } catch(error) {
         document.getElementById("registerResult").innerText = "error";
     }
-}
+  }
+
+
 
 function saveQuiz() {
   const quizPromise = new Promise((resolve) => {

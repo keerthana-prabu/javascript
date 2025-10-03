@@ -93,5 +93,5 @@ function showQuote() {
 
 
 }function showJSON() {
-  document.getElementById("jsonResult").innerText = JSON.stringify(student, null, 2);
+  document.getElementById("jsonResult").innerText = JSON.stringify(student);
 }
