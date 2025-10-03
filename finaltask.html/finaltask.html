@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task</title>
+    <link rel="stylesheet" href="final.css">
+    <script src="final.js"></script>
+</head>
+<body>
+
+    <h1 style="text-align: center; margin-top: 60px; color: rgb(58, 1, 1);">Virtual Event Registration & Score Tracker</h1>
+
+    <div class = "section">
+        <h2 style="font-size: 30px; color: rgb(250, 236, 219);">Resigter!</h2>
+        <form id="Register">
+             <label>Name :<br> <input type="text" id="name" placeholder="Enter your name"></label><br>
+             <label>E-mail :<br> <input type="text" id="mail" placeholder="Enter your E-mail id"></label><br>
+             <label>Age:<br> <input type="number" id="age" placeholder="Enter your age"></label><br> <br>
+             <button type="button" onclick="saveProfile()" style="width: 100px; height: 30px; color: black; font-size: 20px; border-radius: 10px;">Register</button>
+        </form>
+        <p id="registerResult"></p>
+
+    </div>
+    <div class="section">
+        <h2 style="font-size: 30px; color: rgb(250, 236, 219);">Harry Potter Quiz Time!</h2><br>
+        <p>
+           1. Who won the Tri-wizard Tournament? <br>
+            <input type="radio" name="win" id="a1" style="width: 40px; height: 20px; margin-top: 20px;">Victor Krum<br>
+            <input type="radio" name="win" id="a2"style="width: 40px; height: 20px; margin-top: 20px;">Harry Potter<br>
+            <input type="radio" name="win" id="a3"style="width: 40px; height: 20px; margin-top: 20px;">Cedric Diggory<br> <br>
+
+             2. How many siblings do Ron Weasley have? <br>
+            <input type="radio" name="win2" id="b1" style="width: 40px; height: 20px; margin-top: 20px;">Six<br>
+            <input type="radio" name="win2" id="b2"style="width: 40px; height: 20px; margin-top: 20px;">Five<br>
+            <input type="radio" name="win2" id="b3"style="width: 40px; height: 20px; margin-top: 20px;">Seven<br> <br>
+
+             3. What house do Draco Malfoy belong to? <br>
+            <input type="radio" name="win3" id="c1" style="width: 40px; height: 20px; margin-top: 20px;">Hufflepuff<br>
+            <input type="radio" name="win3" id="c2"style="width: 40px; height: 20px; margin-top: 20px;">Ravenclaw<br>
+            <input type="radio" name="win3" id="c3"style="width: 40px; height: 20px; margin-top: 20px;">Slytherin<br> <br>
+             <button type="button" onclick="saveQuiz()" style="width: 180px; height: 30px; color: black; font-size: 20px; border-radius: 10px;">Complete Quiz</button>
+        </p> <p id="quizResult"></p>
+        
+
+    </div>
+     <div class="section">
+    <h2>JSON</h2>
+    <button onclick="showJSON()" style="width: 180px; height: 30px; color: black; font-size: 20px; border-radius: 10px;">Show JSON</button>
+    <pre id="jsonResult"></pre>
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #1e0620;
+  line-height: 30px;
+}
+
+h1 { font-size: 20px;
+  text-align: center;
+  color: #f3b0f8;
+}
+
+.section {
+  background: rgb(244, 192, 228);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px gray;
+  font-size: 10px;
+}
+
+button {
+  margin-top: 2px;
+border-radius: 3px;
+  cursor: pointer;
+  height: 20px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Student Personal Dashboard</h1>
+
+    <div class="section">
+    <h2>Profile</h2>
+    <form id="profileForm">
+      <label>Name:<br> <input type="text" id="name"></label><br>
+      <label>Birth Year:<br> <input type="number" id="birthYear"></label><br>
+      <label>City:<br> <input type="text" id="city"></label><br>
+      <button type="button" onclick="saveProfile()" style="text-align: center;">Save</button>
+    </form>
+    <p id="profileResult"></p>
+  </div>
+  <div class="section">
+    <h2>Age Checker</h2>
+    <button onclick="checkAge()">Check Age</button>
+    <p id="ageResult"></p>
+  </div>
+   <div class="section">
+    <h2>Greeting</h2>
+    <button onclick="showGreeting()">Show Greeting</button>
+    <p id="greetResult"></p>
+  </div>
+
+  <div class="section">
+    <h2>Calculator</h2>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="doMath('+')">+</button>
+    <button onclick="doMath('-')">-</button>
+    <button onclick="doMath('*')">*</button>
+    <button onclick="doMath('/')">/</button>
+    <p id="calcResult"></p>
+  </div>
+
+  <div class="section">
+    <h2>Motivational Quote</h2>
+    <button onclick="showQuote()">Get Quote</button>
+    <p id="quoteResult"></p>
+  </div>
+
+  <div class="section">
+    <h2>Student Info (JSON)</h2>
+    <button onclick="showJSON()">Show JSON</button>
+    <pre id="jsonResult"></pre>
+  </div>
+</body>
+</html>
